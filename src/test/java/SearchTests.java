@@ -15,7 +15,7 @@ public class SearchTests {
     @Test
     void successYandexTest() {
         open("https://ya.ru");
-        $("[name=text]").setValue("Май литл пони большой мултик").pressEnter();
+        $("[name=text]").setValue("Май литл пони игра").pressEnter();
         $("html").shouldHave(text("QA GURU"));
     }
 }
